@@ -64,3 +64,9 @@ p {
 .first-debater {
   border-top: 5px solid red;
 }
+
+.debate span {
+  font-size: 14px;
+}
+
+.author span
