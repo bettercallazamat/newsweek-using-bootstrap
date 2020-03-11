@@ -12,6 +12,15 @@ body, html {
   margin: 0 auto;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+
 h2 {
   font-size: 16px;
 }
@@ -126,11 +135,55 @@ img.hashtag {
   width: 20%;
 }
 
-h3.category-title {
+h3.category-title,
+h5.subscribe-and-newsletters-title {
   color: red;
 }
 
 .category h3 {
   font-size: 22px;
   font-weight: bold;
+}
+
+.subscribe-left {
+  /* width: 260px; */
+  height: 100%;
+}
+
+.subscribe img:first-of-type {
+  left: 0%;
+  top: 0%;
+  height: 90%;
+}
+
+.subscribe img:nth-of-type(2) {
+  right: 0%;
+  bottom: 0%;
+  height: 90%;
+}
+
+.subscribe-container {
+  height: 100%;
+}
+
+.newsletter-bot-container {
+  height: 90%;
+}
+
+.newsletter-bot img {
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+h5.subscribe-and-newsletters-title {
+  font-size: 16px;
+}
+
+.newsletter-bot-right,
+.subscribe-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
