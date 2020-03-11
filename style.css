@@ -187,3 +187,25 @@ h5.subscribe-and-newsletters-title {
   justify-content: center;
   align-items: flex-start;
 }
+
+footer {
+  color: #666;
+}
+
+.footer-header-left img {
+  width: 236px;
+  height: 36px;
+}
+
+footer span {
+  font-size: 12px;
+}
+
+.main-footer a {
+  color: #666;
+  font-size: 14px;
+}
+
+.main-footer i {
+  font-size: 26px;
+}
