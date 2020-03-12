@@ -15,18 +15,20 @@
 <body>
     <div class="wrapper">
         <header class="container-fluid">
-            <div class="header-top row position-relative justify-content-md-between align-items-end padding px-4 py-3">
+            <div class="header-top row position-relative justify-content-between align-items-end padding px-4 py-3">
                 <div class="header-top-left text-white">
-                    <span class="d-block my-2 font-weight-bold">3, Oslo, NO <i class="fas fa-chevron-right"></i></span>
-                    <span class="d-block my-2">Mon, Mar 09, 2020</span>
+                    <a href="#" class="header-logo-sm d-inline d-lg-none"><img src="./imgs/logotype.png" alt="Logo image"></a>
+                    <span class="d-none d-sm-inline d-lg-block my-2 font-weight-bold">3, Oslo, NO <i class="fas fa-chevron-right"></i></span>
+                    <span class="d-none d-lg-block my-2">Mon, Mar 09, 2020</span>
                 </div>
-                <a href="#" class="header-logo position-absolute"><img src="./imgs/logotype.png" alt="Logo image"></a>
+                <a href="#" class="header-logo d-none d-lg-block position-absolute"><img src="./imgs/logotype.png" alt="Logo image"></a>
                 <div class="header-top-right">
                     <a href="#" class="button-primary text-white px-2 py-1">SIGN IN</a>
                     <a href="#" class="button-secondary text-main bg-white px-3 py-1">SUBSCRIBE <i class="pl-2 fas fa-chevron-right"></i></a>
+                    <i class="pl-3 d-inline d-lg-none fas fa-bars"></i>
                 </div>
             </div>
-            <ul class="nav header-nav row flex-row font-weight-bold border-bottom border-light position-relative py-1">
+            <ul class="nav header-nav row flex-row d-none d-lg-flex font-weight-bold border-bottom border-light position-relative py-1">
                 <li class="nav-item">
                     <a class="nav-link px-0 pl-3" href="#">U.S.</a>
                 </li>
@@ -66,9 +68,9 @@
             </ul>
         </header>
 
-        <main class="container-fluid p-4">
+        <main class="container-fluid p-md-4 pb-0">
             <div class="main-news row">
-                <div class="featured-stories col p-2" >
+                <div class="featured-stories order-2 order-md-1 col-lg col-md-5 p-2" >
                     <h2 class="text-secondary font-weight-bold">FEATURED STORIES</h2>
                     <article class="my-3">
                         <div class="position-relative">
@@ -109,7 +111,7 @@
                     </article>
                 </div>
 
-                <div class="top-story-and-more col-5 p-2">
+                <div class="top-story-and-more order-1 order-md-2 col-lg-5 col-md-7 p-2">
                     <section class="top-story">
                         <h2 class="text-secondary font-weight-bold">TOP STORIES</h2>
                         <article class="my-3">
@@ -125,9 +127,9 @@
                         </article>
                     </section>
 
-                    <section class="culture-and-travel row">
-                        <h2 class="text-secondary font-weight-bold col-12 mt-5">CULTURE N TRAVEL</h2>
-                        <article class="col-4">
+                    <section class="culture-and-travel row  mt-5">
+                        <h2 class="text-secondary font-weight-bold col-12">CULTURE N TRAVEL</h2>
+                        <article class="col-12 pb-4 col-md-4">
                             <div class="position-relative">
                                 <img src="https://d.newsweek.com/en/full/1572738/flight-cancel-refund-reschedule-italy-coronavirus-lockdown.webp?w=397&h=397&f=78ee008094a5891e78049c5b6beedef5" alt="">
                                 <span class="secondary-hashtag position-absolute text-dark font-weight-light py-1 px-2">Italy</span>
@@ -136,7 +138,7 @@
                             <p class="m-0 text-secondary">Ahead of the country-wide lockdown announcement, airlines already started giving customers options to change their
                             travel plans.</p>
                         </article>
-                        <article class="col-4">
+                        <article class="col-12 pb-4 col-md-4">
                             <div class="position-relative">
                                 <img src="https://d.newsweek.com/en/full/1572553/restaurants-edge-still.webp?w=397&h=397&f=fcd42aa2505310a1853036746f9a330c"
                                     alt="">
@@ -146,7 +148,7 @@
                             <p class="m-0 text-secondary">Netflix's new food and travel docuseries spans the globe as it makes over failing restaurants that try to get by on
                             their beautiful views alone.</p>
                         </article>
-                        <article class="col-4">
+                        <article class="col-12 pb-4 col-md-4">
                             <div class="position-relative">
                                 <img src="https://d.newsweek.com/en/full/1571081/cul-uncharted-stargazing-banner.webp?w=397&h=397&f=5debbb1743b026c67fa7c79736721c31"
                                     alt="">
@@ -158,8 +160,8 @@
                         </article>
                     </section>
 
-                    <section class="more-stories">
-                        <h2 class="text-secondary font-weight-bold my-2 mt-5">MORE STORIES</h2>
+                    <section class="more-stories order-2 my-4">
+                        <h2 class="text-secondary font-weight-bold my-2">MORE STORIES</h2>
                         <article class="row">
                             <img class="col-3"
                                 src="https://d.newsweek.com/en/full/1572711/joe-biden-detroit-michigan.webp?w=95&h=95&f=8b682ca8c8fde4bfb26dc613809858dc"
@@ -268,71 +270,72 @@
                     </section>
                 </div>
 
-                <div class="opinions-col col p-2">
+                <div class="opinions-col order-3 order-md-3 col-lg col-md-12 p-2">
                     <section class="opinions">
                         <h2 class="text-secondary font-weight-bold">OPINION</h2>
                         <article class="row">
-                            <img class="col-3"
+                            <img class="col-lg-3 col-md-1 col-2"
                                 src="https://d.newsweek.com/en/full/1500975/sam-hill.webp?w=63&h=63&f=608e92ee38c2b44188e64f7006592687"
                                 alt="">
-                            <div class="col-9 pl-0">
-                                <h5 class="font-weight-bold mb-1">In the Taliban-U.S. Agreement, Everybody Wins—Except Women</h5>
+                            <div class="col pl-0">
+                                <h5 class="font-weight-bold mb-1 pr-md-2">In the Taliban-U.S. Agreement, Everybody Wins—Except Women</h5>
                                 <span class="font-weight-bold text-secondary">BY SAM HILL</span>
                             </div>
                         </article>
                         <article class="row">
-                            <img class="col-3"
+                            <img class="col-lg-3 col-md-1 col-2"
                                 src="https://d.newsweek.com/en/full/1572752/jamal-abdi.webp?w=63&h=63&f=e99d1e5404955b0e30150fb0612f40e3"
                                 alt="">
-                            <div class="col-9 pl-0">
-                                <h5 class="font-weight-bold mb-1">Trump's Bungling of Coronavirus Started With Iran</h5>
+                            <div class="col pl-0">
+                                <h5 class="font-weight-bold mb-1 pr-md-2">Trump's Bungling of Coronavirus Started With Iran</h5>
                                 <span class="font-weight-bold text-secondary">BY JAMAL ABDI</span>
                             </div>
                         </article>
                         <article class="row">
-                            <img class="col-3"
+                            <img class="col-lg-3 col-md-1 col-2"
                                 src="https://d.newsweek.com/en/full/1527225/hayaatun-sillem.webp?w=63&h=63&f=88fe77692f5748b78bfd037e8175fd41"
                                 alt="">
-                            <div class="col-9 pl-0">
-                                <h5 class="font-weight-bold mb-1">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</h5>
+                            <div class="col pl-0">
+                                <h5 class="font-weight-bold mb-1 pr-md-2">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</h5>
                                 <span class="font-weight-bold text-secondary">BY NIGEL FARAGE</span>
                             </div>
                         </article>
                         <article class="row">
-                            <img class="col-3"
+                            <img class="col-lg-3 col-md-1 col-2"
                                 src="https://d.newsweek.com/en/full/1500975/sam-hill.webp?w=63&h=63&f=608e92ee38c2b44188e64f7006592687"
                                 alt="">
-                            <div class="col-9 pl-0">
-                                <h5 class="font-weight-bold mb-1">In the Taliban-U.S. Agreement, Everybody Wins—Except Women</h5>
+                            <div class="col pl-0">
+                                <h5 class="font-weight-bold mb-1 pr-md-2">In the Taliban-U.S. Agreement, Everybody Wins—Except Women</h5>
                                 <span class="font-weight-bold text-secondary">BY SAM HILL</span>
                             </div>
                         </article>
                         <article class="row">
-                            <img class="col-3"
+                            <img class="col-lg-3 col-md-1 col-2"
                                 src="https://d.newsweek.com/en/full/1572752/jamal-abdi.webp?w=63&h=63&f=e99d1e5404955b0e30150fb0612f40e3"
                                 alt="">
-                            <div class="col-9 pl-0">
-                                <h5 class="font-weight-bold mb-1">Trump's Bungling of Coronavirus Started With Iran</h5>
+                            <div class="col pl-0">
+                                <h5 class="font-weight-bold mb-1 pr-md-2">Trump's Bungling of Coronavirus Started With Iran</h5>
                                 <span class="font-weight-bold text-secondary">BY JAMAL ABDI</span>
                             </div>
                         </article>
                         <article class="row py-3">
-                            <img class="col-3"
+                            <img class="col-lg-3 col-md-1 col-2"
                                 src="https://d.newsweek.com/en/full/1527225/hayaatun-sillem.webp?w=63&h=63&f=88fe77692f5748b78bfd037e8175fd41"
                                 alt="">
-                            <div class="col-9 pl-0">
-                                <h5 class="font-weight-bold mb-1">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</h5>
+                            <div class="col pl-0">
+                                <h5 class="font-weight-bold mb-1 pr-md-2">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</h5>
                                 <span class="font-weight-bold text-secondary">BY NIGEL FARAGE</span>
                             </div>
                         </article>
                     </section>
+
                     <section class="debate mt-2">
                         <h2 class="text-secondary font-weight-bold">THE DEBATE</h2>
                         <div class="first-debater pb-2">
                             <article class="row align-items-center">
-                                <img class="col-4" src="https://d.newsweek.com/en/full/1572572/farage-johnson-corona.webp?w=397&h=265&f=21391dc808b8d22a74101528562b16ab"
+                                <img class="col-lg-4 col-md-2 col-3 mx-md-0 pr-md-4 pr-4" src="https://d.newsweek.com/en/full/1572572/farage-johnson-corona.webp?w=397&h=265&f=21391dc808b8d22a74101528562b16ab"
                                     alt="">
-                                <h5 class="col-8 pl-0 font-weight-bold">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</h5>
+                                <h5 class="col pl-0 font-weight-bold row pr-4 pl-md-2">Protecting Us All From an Epidemic Should Be Prioritized Over the Economy</h5>
                             </article>
                             <div class="author py-2 mt-3 position-relative">
                                 <span>BY <a class="text-dark font-weight-bold" href="#">NIGEL FARAGE</a></span>
@@ -345,10 +348,10 @@
                         </div>
                         <div class="second-debater">
                             <article class="row align-items-center">
-                                <img class="col-4"
+                                <img class="col-lg-4 col-md-2 col-3 mx-md-0 pr-md-4 pr-4"
                                     src="https://d.newsweek.com/en/full/1572870/coronavirus-italy.webp?w=397&h=265&f=8ca9dfc141dab16b9c9b3d959364a854"
                                     alt="">
-                                <h5 class="col-8 pl-0 font-weight-bold">In This Fight Against Coronavirus, We Need to Protect Both Lives and Livelihoods</h5>
+                                <h5 class="col pl-0 font-weight-bold row pr-4 pl-md-2">In This Fight Against Coronavirus, We Need to Protect Both Lives and Livelihoods</h5>
                             </article>
                             <div class="author py-2 my-3 position-relative">
                                 <span>BY <a class="text-dark font-weight-bold" href="#">ASAD HAMIR</a></span>
@@ -358,55 +361,57 @@
                             </div>
                         </div>
                     </section>
+
                     <section class="latest-news mt-5">
                         <h2 class="text-secondary font-weight-bold">LATEST NEWS</h2>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573026/one-chicago-series-next.webp?w=95&h=95&f=e4f6ef4ad72a5d74b50840e7b1214898"
                                 alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">Why New Episodes of 'Chicago Fire,' 'Hope' and 'PD' Aren't Airing This Week</h5>
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">Why New Episodes of 'Chicago Fire,' 'Hope' and 'PD' Aren't Airing This Week</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573010/apple-iphone.webp?w=95&h=95&f=173142813cd75c9abc2e167e61f79f30"
                                 alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">Whisper Intimate Confessions App Left User Data Exposed: Report</h5>
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">Whisper Intimate Confessions App Left User Data Exposed: Report</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573003/hd74423.webp?w=95&h=95&f=f6c04753826ddbeff94faf1d7a69d395"
                                 alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">First-of-Its-Kind Tear-Shaped Star That Pulsates on Just One Side Found</h5>
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">First-of-Its-Kind Tear-Shaped Star That Pulsates on Just One Side Found</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573026/one-chicago-series-next.webp?w=95&h=95&f=e4f6ef4ad72a5d74b50840e7b1214898"
                                 alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">Why New Episodes of 'Chicago Fire,' 'Hope' and 'PD' Aren't Airing This Week
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">Why New Episodes of 'Chicago Fire,' 'Hope' and 'PD' Aren't Airing This Week
                             </h5>
                         </article>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573010/apple-iphone.webp?w=95&h=95&f=173142813cd75c9abc2e167e61f79f30"
                                 alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">Whisper Intimate Confessions App Left User Data Exposed: Report</h5>
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">Whisper Intimate Confessions App Left User Data Exposed: Report</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573003/hd74423.webp?w=95&h=95&f=f6c04753826ddbeff94faf1d7a69d395" alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">First-of-Its-Kind Tear-Shaped Star That Pulsates on Just One Side Found</h5>
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">First-of-Its-Kind Tear-Shaped Star That Pulsates on Just One Side Found</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4"
+                            <img class="col-lg-4 col-md-2 col-3 mr-3 mx-md-0 pr-md-4"
                                 src="https://d.newsweek.com/en/full/1573026/one-chicago-series-next.webp?w=95&h=95&f=e4f6ef4ad72a5d74b50840e7b1214898"
                                 alt="">
-                            <h5 class="col-8 pl-0 font-weight-bold">Why New Episodes of 'Chicago Fire,' 'Hope' and 'PD' Aren't Airing This Week
+                            <h5 class="col pl-0 mt-1 pr-4 mt-md-0 row font-weight-bold">Why New Episodes of 'Chicago Fire,' 'Hope' and 'PD' Aren't Airing This Week
                             </h5>
                         </article>
                     </section>
-                    <div class="newsletter container-fluid p-4">
+
+                    <div class="newsletter container-fluid p-4 mt-5 col-md-10 mt-md-3 col-6">
                         <div class="row d-flex align-items-center">
-                            <img class="col-2 pl-3 pr-0" src="./imgs/logotype-small.png" alt="">
+                            <img class="col-lg-2 col-md-2 col-2 pl-3 pr-0" src="./imgs/logotype-small.png" alt="">
                             <h6 class="col text-dark font-weight-bold m-0 pl-3">SIGN UP FOR OUR NEWSLETTER</h3>
                         </div>
                         <button class="btn btn-secondary rounded-0 font-weight-bold my-2">SIGN UP <i class="pl-2 fas fa-chevron-right"></i></button>
@@ -421,7 +426,7 @@
                     <h6 class="text-dark font-weight-bold m-0">IN THE MAGAZINE</h6>
                 </div>
                 <div class="magazines-container row py-3">
-                    <div class="magazine magazine-first col-3">
+                    <div class="magazine magazine-first col-md-3">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572460/march-13-2020.webp?w=290&h=387&q=90&f=e2c6b3e8ae187ab44d473474b85ff7f8"
                                 alt="featured-stories">
@@ -429,14 +434,14 @@
                         </div>
                         <a class="magazine-link d-block text-center text-dark font-weight-bold py-2 bg-light" href="#">SEE ALL FEATURES <i class="fas fa-chevron-right"></i></a>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1571795/fea-okmillennials-banner.webp?w=466&h=311&q=90&f=22793e3731bb8612bf9e34795327f3e1"
                             alt="featured-stories">
                         <span class="d-inline-block aditional-hastag bg-main font-weight-bold text-white py-2 px-3 my-2">COVER</span>
                         <span class="d-inline-block aditional-hastag text-main font-weight-bold py-2 px-3">CULTURE</span>
                         <h3>OK, Millennial: Boomers Are the Greatest Generation in History</h3>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1569547/bernie-sanders.webp?w=466&h=311&q=90&f=699504971e7655a3af45bb949369d305"
                             alt="featured-stories">
                         <span class="d-inline-block aditional-hastag bg-main font-weight-bold text-white py-2 px-3 my-2">FEATURES</span>
@@ -444,7 +449,7 @@
                             class="d-inline-block aditional-hastag text-main font-weight-bold py-2 px-3">U.S.</span>
                         <h3>Why Muslim Voters Love Bernie Sanders</h3>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1568834/vatican-pope-pius-xii.webp?w=466&h=311&q=90&f=414a5b99425e521d30d3d2e9acef2c5d"
                             alt="featured-stories">
                         <span class="d-inline-block aditional-hastag bg-main font-weight-bold text-white py-2 px-3 my-2">PERISCOPE</span>
@@ -452,28 +457,28 @@
                             class="d-inline-block aditional-hastag text-main font-weight-bold py-2 px-3">WORLD</span>
                         <h3>'Hitler's Pope' Archive May Shed More Light on Role of Vatican in WWII</h3>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1571094/cul-stephenmalkmus-banner.webp?w=466&h=311&l=47&t=45&q=90&f=4b0a45aff01bf29a88a38346cc2de7c0"
                             alt="featured-stories">
                         <span class="d-inline-block aditional-hastag bg-main font-weight-bold text-white py-2 px-3 my-2">DOWNTIME</span><span
                             class="d-inline-block aditional-hastag text-main font-weight-bold py-2 px-3">CULTURE</span>
                         <h3>Alt-Rock Legend Stephen Malkmus on His New Album and the Return of Pavement</h3>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1569547/bernie-sanders.webp?w=466&h=311&q=90&f=699504971e7655a3af45bb949369d305"
                             alt="featured-stories">
                         <span class="d-inline-block aditional-hastag bg-main font-weight-bold text-white py-2 px-3 my-2">FEATURES</span>
                         <span class="d-inline-block aditional-hastag text-main font-weight-bold py-2 px-3">U.S.</span>
                         <h3>Why Muslim Voters Love Bernie Sanders</h3>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1568834/vatican-pope-pius-xii.webp?w=466&h=311&q=90&f=414a5b99425e521d30d3d2e9acef2c5d"
                             alt="featured-stories">
                         <span class="d-inline-block aditional-hastag bg-main font-weight-bold text-white py-2 px-3 my-2">PERISCOPE</span>
                         <span class="d-inline-block aditional-hastag text-main font-weight-bold py-2 px-3">WORLD</span>
                         <h3>'Hitler's Pope' Archive May Shed More Light on Role of Vatican in WWII</h3>
                     </div>
-                    <div class="magazine col-3 mt-3">
+                    <div class="magazine col-md-3 mt-3">
                         <img src="https://d.newsweek.com/en/full/1571094/cul-stephenmalkmus-banner.webp?w=466&h=311&l=47&t=45&q=90&f=4b0a45aff01bf29a88a38346cc2de7c0"
                             alt="featured-stories">
                         <span
@@ -490,7 +495,7 @@
                     <h6 class="text-dark font-weight-bold m-0">EDITOR'S PICK</h6>
                 </div>
                 <div class="editors-pick-container row">
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572986/australian-wildfire.webp?w=397&h=265&f=d378b6123bf3e515b6a55facae237b06"
                                 alt="featured-stories">
@@ -500,7 +505,7 @@
                         <p class="text-dark m-0">Scientists compared centuries-worth of data to see how the Indian Ocean Dipole has changed over the last millennia.
                         Their results suggest extreme events are becoming more frequent and more intense.</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572975/cancelled-flights-osaka-japan-march-2020.webp?w=397&h=265&f=8ce0825d7f5b4ce2ec106bed5debded2"
                                 alt="featured-stories">
@@ -510,7 +515,7 @@
                         <p class="text-dark m-0">Some insurance companies have been adjusting their policies in view of the outbreak, but travelers should check with
                         their airlines, hotels and travel agents before filing a claim with insurers.</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572795/ted-lieu-wuhan-virus-racist.webp?w=397&h=265&f=83846438cface94b45087eeadaba1f90"
                                 alt="featured-stories">
@@ -519,7 +524,7 @@
                         <h3 class="font-weight-bold my-1 ">GOP Representative Sparks Debate Whether 'Wuhan Virus,' Ebola Are Racist Terms</h3>
                         <p class="text-dark m-0">Arizona congressman Paul Gosar on Sunday announced he would be self-quarantining with someone he described as having been "hospitalized with the Wuhan virus" .</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572673/supermoon-new-york-city.webp?w=397&h=265&f=1f99cee0dc14a59b29acf90af53f6eed"
                                 alt="featured-stories">
@@ -528,7 +533,7 @@
                         <h3 class="font-weight-bold my-1 ">Full Worm Moon Pictures: Incredible Images Show Last Night's Supermoon</h3>
                         <p class="text-dark m-0">The March full moon was the second of four consecutive supermoons this year.</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572975/cancelled-flights-osaka-japan-march-2020.webp?w=397&h=265&f=8ce0825d7f5b4ce2ec106bed5debded2"
                                 alt="featured-stories">
@@ -539,7 +544,7 @@
                             travelers should check with
                             their airlines, hotels and travel agents before filing a claim with insurers.</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572986/australian-wildfire.webp?w=397&h=265&f=d378b6123bf3e515b6a55facae237b06"
                                 alt="featured-stories">
@@ -550,7 +555,7 @@
                             over the last millennia.
                             Their results suggest extreme events are becoming more frequent and more intense.</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572673/supermoon-new-york-city.webp?w=397&h=265&f=1f99cee0dc14a59b29acf90af53f6eed"
                                 alt="featured-stories">
@@ -559,7 +564,7 @@
                         <h3 class="font-weight-bold my-1 ">Full Worm Moon Pictures: Incredible Images Show Last Night's Supermoon</h3>
                         <p class="text-dark m-0">The March full moon was the second of four consecutive supermoons this year.</p>
                     </article>
-                    <article class="my-3 col-3">
+                    <article class="my-3 col-lg-3 col-md-6">
                         <div class="position-relative">
                             <img src="https://d.newsweek.com/en/full/1572795/ted-lieu-wuhan-virus-racist.webp?w=397&h=265&f=83846438cface94b45087eeadaba1f90"
                                 alt="featured-stories">
@@ -579,7 +584,7 @@
                     <h6 class="text-dark font-weight-bold m-0">FEATURED SLIDESHOWS</h6>
                 </div>
                 <div class="slideshows-container row">
-                    <article class="my-3 col-4">
+                    <article class="my-3 col-md-4">
                         <div class="position-relative">
                             <img class="article-image" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
                                 alt="featured-stories">
@@ -587,7 +592,7 @@
                         </div>
                         <h3 class="font-weight-bold my-1 ">Relive the 'Star Wars' Saga at These Filming Locations</h3>
                     </article>
-                    <article class="my-3 col-4">
+                    <article class="my-3 col-md-4">
                         <div class="position-relative">
                             <img class="article-image"
                                 src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.webp?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d"
@@ -596,7 +601,7 @@
                         </div>
                         <h3 class="font-weight-bold my-1 ">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</h3>
                     </article>
-                    <article class="my-3 col-4">
+                    <article class="my-3 col-md-4">
                         <div class="position-relative">
                             <img class="article-image"
                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.webp?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
@@ -605,7 +610,7 @@
                         </div>
                         <h3 class="font-weight-bold my-1 ">Active Volcanoes Around the World That Could Erupt at Any Moment</h3>
                     </article>
-                    <article class="my-3 col-4">
+                    <article class="my-3 col-md-4">
                         <div class="position-relative">
                             <img class="article-image"
                                 src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.webp?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d"
@@ -614,7 +619,7 @@
                         </div>
                         <h3 class="font-weight-bold my-1 ">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</h3>
                     </article>
-                    <article class="my-3 col-4">
+                    <article class="my-3 col-md-4">
                         <div class="position-relative">
                             <img class="article-image"
                                 src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d"
@@ -623,7 +628,7 @@
                         </div>
                         <h3 class="font-weight-bold my-1 ">Relive the 'Star Wars' Saga at These Filming Locations</h3>
                     </article>
-                    <article class="my-3 col-4">
+                    <article class="my-3 col-md-4">
                         <div class="position-relative">
                             <img class="article-image"
                                 src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.webp?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6"
@@ -639,63 +644,63 @@
             <section class="category py-3">
                 <h3 class="category-title">U.S.</h3>
                 <div class="category-container row">
-                    <article class="col-4">
-                        <img src="https://d.newsweek.com/en/full/1573074/coronavirus-recoveries-us-global-cases.webp?w=397&h=265&f=0e215f9d6b052a4451c36c89b8126425"
+                    <article class="col-md-4">
+                        <img class="category-main-img" src="https://d.newsweek.com/en/full/1573074/coronavirus-recoveries-us-global-cases.webp?w=397&h=265&f=0e215f9d6b052a4451c36c89b8126425"
                             alt="featured-stories">
-                        <h3>Over 66,000 Have Recovered From Coronavirus, Per Johns Hopkins University</h3>
+                        <h3 class="pt-2 pt-md-0">Over 66,000 Have Recovered From Coronavirus, Per Johns Hopkins University</h3>
                     </article>
-                    <article class="col-4">
-                        <img src="https://d.newsweek.com/en/full/1573102/super-tuesday-primary-voters.webp?w=397&h=265&f=b7119d3c9cce244963cbbb96b607d0cd"
+                    <article class="col-md-4">
+                        <img class="category-main-img" src="https://d.newsweek.com/en/full/1573102/super-tuesday-primary-voters.webp?w=397&h=265&f=b7119d3c9cce244963cbbb96b607d0cd"
                             alt="featured-stories">
-                        <h3>Democratic Delegate Count Update: Results For Biden, Sanders and Gabbard</h3>
+                        <h3 class="pt-2 pt-md-0">Democratic Delegate Count Update: Results For Biden, Sanders and Gabbard</h3>
                     </article>
-                    <aside class="category-aside col-4 row">
+                    <aside class="category-aside col-md-4 row">
                         <article class="row">
-                            <img class="col-4 px-3 pl-4"
+                            <img class="category-aside-img col-md-4 col-3 px-3 px-4"
                                 src="https://d.newsweek.com/en/full/1573028/dr-anthony-fauci-covid-19-briefing.webp?w=95&h=95&f=2e43e6e9e762cda94d8010ffc0f163af"
                                 alt="">
-                            <h5 class="col-8 px-0 font-weight-bold">Trump's Top Coronavirus Doctor Says It's Much More Lethal Than Seasonal Flu</h5>
+                            <h5 class="col px-0 font-weight-bold">Trump's Top Coronavirus Doctor Says It's Much More Lethal Than Seasonal Flu</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4 px-3 pl-4"
+                            <img class="category-aside-img col-md-4 col-3 px-3 pl-4"
                                 src="https://d.newsweek.com/en/full/1573013/seismic-graph.webp?w=95&h=95&f=67ec5335f1746d4f8673ccd72d1a8fd0"
                                 alt="">
-                            <h5 class="col-8 px-0 font-weight-bold">New York Earthquake: South Glens Falls Struck by 3.1 Shake</h5>
+                            <h5 class="col pr-0 pl-2 font-weight-bold">New York Earthquake: South Glens Falls Struck by 3.1 Shake</h5>
                         </article>
                         <article class="row">
-                            <img class="col-4 px-3 pl-4"
+                            <img class="category-aside-img col-md-4 col-3 px-3 px-4"
                                 src="https://d.newsweek.com/en/full/1572992/sanitizer.webp?w=95&h=95&f=04ec8177c12a5cc2221e8c18388de99a"
                                 alt="">
-                            <h5 class="col-8 px-0 font-weight-bold">7-Eleven Owner Accused of Selling Homemade Sanitizer Which Burned Children</h5>
+                            <h5 class="col px-0 font-weight-bold">7-Eleven Owner Accused of Selling Homemade Sanitizer Which Burned Children</h5>
                         </article>
                     </aside>
                 </div>
             </section>
 
-            <div class="subscribe-and-newsletters-bot row border-top border-secondary py-5 my-3">
-                <section class="subscribe col-8">
+            <div class="subscribe-and-newsletters-bot row border-top border-secondary pt-5 py-md-5 my-3">
+                <section class="subscribe col-lg-8 col-md-12 mb-md-5 mb-5">
                     <h5 class="subscribe-and-newsletters-title">SUBSCRIBE</h5>
                     <div class="subscribe-container row ml-0 p-4">
-                        <div class="subscribe-left col-4 position-relative">
+                        <div class="subscribe-left col-12 col-md-4 p-5 p-md-0 position-relative">
                             <img class="position-absolute" src="https://d.newsweek.com/en/full/1569344/march-06-2020-cover.jpg?w=170&q=95&f=55944e2b38c7b505782d06582edd44fd" alt="">
                             <img class="position-absolute" src="https://d.newsweek.com/en/full/1572460/march-13-2020.jpg?w=170&q=95&f=52ec8e410e9337459df2777847b09b11" alt="">
                         </div>
-                        <div class="subscribe-right col-8 pl-5">
-                            <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
-                            <span class="text-secondary font-weight-light d-block pt-2">All Access + Weekly Delivery.</span>
-                            <span class="text-secondary font-weight-light d-block pb-2">Choose A Membership That's Perfect for You!</span>
-                            <button class="btn button-primary bg-main text-white rounded-0 d-block">SUBSCRIBE <i class="pl-2 fas fa-chevron-right"></i></button>
+                        <div class="subscribe-right col pl-md-5 align-items-center align-items-md-start">
+                            <h3 class="text-center text-md-left mt-5 my-md-0">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                            <span class="text-secondary font-weight-light d-block pt-3">All Access + Weekly Delivery.</span>
+                            <span class="text-secondary font-weight-light d-block pb-3">Choose A Membership That's Perfect for You!</span>
+                            <button class="btn button-primary bg-main text-white rounded-0 d-block mb-4 mb-md-0">SUBSCRIBE <i class="pl-2 fas fa-chevron-right"></i></button>
                         </div>
                     </div>
                 </section>
-                <section class="newsletter-bot col-4">
+                <section class="newsletter-bot align-items-start align col-lg-4 col-md-12 mt-5 pt-5 mt-md-5 pt-md-2 mt-lg-0 pt-lg-0">
                     <h5 class="subscribe-and-newsletters-title">NEWSLETTER</h5>
                     <div class="newsletter-bot-container row ">
-                        <img class="col-6 pr-0" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5" alt="">
-                        <div class="newsletter-bot-right p-4 col-6">
-                            <h3>The Starting 5</h3>
-                            <span class="text-secondary font-weight-light">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</span>
-                            <button class="btn button-primary bg-main text-white rounded-0">SIGN UP <i class="pl-2 fas fa-chevron-right"></i></button>
+                        <img class="col-lg-6 col-md-3 pl-3 pr-0" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5" alt="">
+                        <div class="newsletter-bot-right p-4 col align-items-center align-items-md-start">
+                            <h3 class="m-0">The Starting 5</h3>
+                            <span class="text-secondary text-center text-md-left d-block my-3 mx-5 my-md-0 font-weight-light">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</span>
+                            <button class="btn button-primary bg-main text-white rounded-0 mt-md-3">SIGN UP <i class="pl-2 fas fa-chevron-right"></i></button>
                         </div>
                     </div>
                 </section>
@@ -703,13 +708,13 @@
 
         </main>
         
-        <footer class= "main-footer container-fluid position-relative my-5">
-            <header class="d-flex justify-content-between align-items-end pb-3 pt-4">
+        <footer class= "main-footer container-fluid position-relative my-3">
+            <header class="d-md-flex justify-content-md-between flex-direction-column align-items-end pb-3 pt-4">
                 <div class="footer-header-left d-flex align-items-end">
                     <img src="./imgs/logotype-redtext.png" alt="">
                     <span class="pl-3">© 2020 NEWSWEEK</span>
                 </div>
-                <div class="footer-header-right">
+                <div class="footer-header-right mt-3 mt-md-0">
                     <i class="pl-2 fab fa-facebook-square"></i>
                     <i class="pl-2 fab fa-twitter"></i>
                     <i class="pl-2 fab fa-instagram"></i>
@@ -720,61 +725,61 @@
 
             <ul class="nav edditions row py-0">
                 <li class="nav-item">
-                    <a class="nav-link pr-3 font-weight-bold" href="#">Editions:</a>
+                    <a class="nav-link disabled pb-1 pr-3 font-weight-bold" href="#">Editions:</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-3" href="#">U.S. Edition</a>
+                    <a class="nav-link pb-1 pr-3" href="#">U.S. Edition</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-3" href="#">日本</a>
+                    <a class="nav-link pb-1 pr-3" href="#">日本</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-3" href="#">Pakistan</a>
+                    <a class="nav-link pb-1 pr-3" href="#">Pakistan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-3" href="#">Polska</a>
+                    <a class="nav-link pb-1 pr-3" href="#">Polska</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-3" href="#">Romania</a>
+                    <a class="nav-link pb-1 pr-3" href="#">Romania</a>
                 </li>
             </ul>
 
             <ul class="nav website-nav row py-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link py-1" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Corrections</a>
+                    <a class="nav-link py-1" href="#">Corrections</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link py-1" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Advertise</a>
+                    <a class="nav-link py-1" href="#">Advertise</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link py-1" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Corrections</a>
+                    <a class="nav-link py-1" href="#">Corrections</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link py-1" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Advertise</a>
+                    <a class="nav-link py-1" href="#">Advertise</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link py-1" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Corrections</a>
+                    <a class="nav-link py-1" href="#">Corrections</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link py-1" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Advertise</a>
+                    <a class="nav-link py-1" href="#">Advertise</a>
                 </li>
             </ul>
         </footer>
