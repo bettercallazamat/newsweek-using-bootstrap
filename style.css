@@ -36,7 +36,6 @@ h5 {
 
 h6 {
   font-size: 19px;
-  /* line-height: 20px; */
 }
 
 p {
@@ -103,7 +102,6 @@ p {
   color: #fb9a94;
 }
 
-
 header .nav a {
   font-size: 19px;
   color: #000;
@@ -129,7 +127,7 @@ header input {
   content: "";
   position: absolute;
   right: 0;
-  top: 0;
+  top: 103px;
   background-color: #f72210;
   border-left: 12px solid white;
   border-top: 13px solid #f72210;
@@ -307,19 +305,17 @@ h5.subscribe-and-newsletters-title {
     height: 50%;
     margin-bottom: -30%;
   }
+
   .newsletter-bot-container img {
     height: 100%;
   }
 }
-
 
 .newsletter-bot-right {
   border: 1px solid #e5e5e5;
 }
 
 .newsletter-bot img {
-  /* width: 100%; */
-  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -354,18 +350,6 @@ img.category-aside-img {
 .main-footer {
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.main-footer::before {
-  content: "";
-  display: block;
-  margin: 0 0 0 -3%;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  padding-top: 1px;
-  background-color: #e2e2e2;
-
 }
 
 .main-footer header {

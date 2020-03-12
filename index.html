@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="container-fluid">
+        <header class="main-header container-fluid">
             <div class="header-top row position-relative justify-content-between align-items-end padding px-4 py-3">
                 <div class="header-top-left text-white">
                     <a href="#" class="header-logo-sm d-inline d-lg-none"><img src="./imgs/logotype.png" alt="Logo image"></a>
@@ -28,44 +28,46 @@
                     <i class="pl-3 d-inline d-lg-none fas fa-bars"></i>
                 </div>
             </div>
-            <ul class="nav header-nav row flex-row d-none d-lg-flex font-weight-bold border-bottom border-light position-relative py-1">
-                <li class="nav-item">
-                    <a class="nav-link px-0 pl-3" href="#">U.S.</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">World</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Business</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Tech & Science</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Culture</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Newsgeek</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Sport</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Health</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">The Debate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Vintage</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-0" href="#">Weather</a>
-                </li>
-                <form class="form-inline " action="/">
+            <nav class="main-nav d-none d-lg-flex">
+                <ul class="nav header-nav row flex-row d-none d-lg-flex font-weight-bold border-bottom border-light py-1">
+                    <li class="nav-item">
+                        <a class="nav-link px-0 pl-3" href="#">U.S.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Tech & Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Newsgeek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">The Debate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Vintage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0" href="#">Weather</a>
+                    </li>
+                </ul>
+                <form class="form-inline pl-4" action="/">
                     <input class="border-0" type="text" placeholder="Search">
                 </form>
-            </ul>
+            </nav>
         </header>
 
         <main class="container-fluid p-md-4 pb-0">
@@ -412,7 +414,7 @@
                     <div class="newsletter container-fluid p-4 mt-5 col-md-10 mt-md-3 col-6">
                         <div class="row d-flex align-items-center">
                             <img class="col-lg-2 col-md-2 col-2 pl-3 pr-0" src="./imgs/logotype-small.png" alt="">
-                            <h6 class="col text-dark font-weight-bold m-0 pl-3">SIGN UP FOR OUR NEWSLETTER</h3>
+                            <h3 class="col text-dark font-weight-bold m-0 pl-3">SIGN UP FOR OUR NEWSLETTER</h3>
                         </div>
                         <button class="btn btn-secondary rounded-0 font-weight-bold my-2">SIGN UP <i class="pl-2 fas fa-chevron-right"></i></button>
                         <span class="d-block font-weight-bold">Update your preferences »</span>
@@ -699,8 +701,8 @@
                         <img class="col-lg-6 col-md-3 pl-3 pr-0" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5" alt="">
                         <div class="newsletter-bot-right p-4 col align-items-center align-items-md-start">
                             <h3 class="m-0">The Starting 5</h3>
-                            <span class="text-secondary text-center text-md-left d-block my-3 mx-5 my-md-0 font-weight-light">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</span>
-                            <button class="btn button-primary bg-main text-white rounded-0 mt-md-3">SIGN UP <i class="pl-2 fas fa-chevron-right"></i></button>
+                            <span class="text-secondary text-center text-md-left d-block my-3 mx-5 mx-md-0 font-weight-light">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</span>
+                            <button class="btn button-primary bg-main text-white rounded-0">SIGN UP <i class="pl-2 fas fa-chevron-right"></i></button>
                         </div>
                     </div>
                 </section>
@@ -708,8 +710,8 @@
 
         </main>
         
-        <footer class= "main-footer container-fluid position-relative my-3">
-            <header class="d-md-flex justify-content-md-between flex-direction-column align-items-end pb-3 pt-4">
+        <footer class= "main-footer container-fluid position-relative border-top border-secondary my-3">
+            <div class="d-md-flex justify-content-md-between flex-direction-column align-items-end pb-3 pt-4">
                 <div class="footer-header-left d-flex align-items-end">
                     <img src="./imgs/logotype-redtext.png" alt="">
                     <span class="pl-3">© 2020 NEWSWEEK</span>
@@ -721,7 +723,7 @@
                     <i class="pl-2 fab fa-tumblr"></i>
                     <i class="pl-2 fab fa-linkedin-in"></i>
                 </div>
-            </header>
+            </div>
 
             <ul class="nav edditions row py-0">
                 <li class="nav-item">
