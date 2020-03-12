@@ -1,4 +1,4 @@
-body, html {
+body {
   font-family: "Roboto Condensed",sans-serif;
   height: 100%;
   width: 100%;
@@ -16,7 +16,6 @@ h5,
 h6 {
   font-weight: bold;
 }
-
 
 h2 {
   font-size: 16px;
@@ -141,7 +140,7 @@ header input {
   height: 100%;
 }
 
-.more-stories article:before {
+.more-stories article::before {
   content: "";
   width: 95%;
   display: block;
@@ -292,7 +291,6 @@ h5.subscribe-and-newsletters-title {
 
 .subscribe-container {
   height: 120%;
-  width: ;
   background-color: #f4f5f6;
 }
 
