@@ -133,6 +133,11 @@ header input {
   width: 6%;
 }
 
+div.featured-stories {
+  position: sticky;
+  top: -100%;
+}
+
 .main-news img,
 .editors-pick-container img,
 .slideshows-container img.article-image {
