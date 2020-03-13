@@ -77,6 +77,29 @@ p {
   height: 28px;
 }
 
+.main-nav a:hover,
+.opinions h5:hover,
+.latest-news h5:hover {
+  color: #f72210;
+}
+
+.featured-stories h3:hover,
+.top-story-and-more h3:hover,
+.top-story-and-more h5:hover,
+.magazine h3:hover,
+.editors-pick h3:hover,
+.slideshows h3:hover,
+.category h3:hover,
+.category h5:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
+.main-footer a:hover,
+.footer i:hover {
+  color: #000;
+}
+
 .header-top {
   background-color: #f72210;
 }
