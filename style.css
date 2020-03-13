@@ -376,6 +376,7 @@ footer.main-footer a {
 .opinions h5:hover,
 .latest-news h5:hover {
   color: #f72210;
+  cursor: pointer;
 }
 
 .featured-stories h3:hover,
@@ -388,6 +389,7 @@ footer.main-footer a {
 .category h5:hover {
   text-decoration: underline;
   text-decoration-color: #f72210;
+  cursor: pointer;
 }
 
 .main-footer a:hover,
