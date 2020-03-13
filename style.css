@@ -125,8 +125,8 @@ header input {
 .header-nav::before {
   content: "";
   position: absolute;
-  right: 0;
-  top: 103px;
+  right: -15px;
+  top: 0;
   background-color: #f72210;
   border-left: 12px solid white;
   border-top: 13px solid #f72210;
